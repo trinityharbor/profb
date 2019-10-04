@@ -1,0 +1,8 @@
+/* New Styles for Website rebuild */
+form.search {
+    display: none;
+}
+.bx-controls {
+    bottom: 20px;
+    top: auto;
+}
