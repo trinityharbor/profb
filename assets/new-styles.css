@@ -6,3 +6,7 @@ form.search {
     bottom: 20px;
     top: auto;
 }
+div#product-description-height {
+    max-height: unset;
+    overflow: auto;
+}
