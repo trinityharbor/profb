@@ -19,3 +19,10 @@ div#cart-info {
     color: white;
     font-weight: bold;
 }
+
+#product-form .form-group label {
+    display: none;
+}
+#product-form .form-group input {
+    display: none;
+}
