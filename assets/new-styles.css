@@ -26,3 +26,9 @@ div#cart-info {
 #product-form .form-group input {
     display: none;
 }
+.products .product-price {
+    display: none;
+}
+span#regular-price {
+    display: none;
+}
