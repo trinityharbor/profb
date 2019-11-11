@@ -13,3 +13,9 @@ div#product-description-height {
 div#cart-info {
     display: none;
 }
+#product-form .form-group a {
+    background: red;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+}
