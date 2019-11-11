@@ -10,3 +10,6 @@ div#product-description-height {
     max-height: unset;
     overflow: auto;
 }
+div#cart-info {
+    display: none;
+}
