@@ -32,3 +32,82 @@ div#cart-info {
 span#regular-price {
     display: none;
 }
+/*HOMEPAGE*/
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1000px){
+   .flex-wrap {
+        flex-direction: column;
+    } 
+}
+
+.left {
+    flex-grow: 0;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.right {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.left,.right {
+    padding: 0px 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* colored blocks */
+.soft-block {
+    padding: 11px 10px;
+    background: lightblue;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+
+.soft-block h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.soft-block p {
+    margin-bottom: 0px;
+}
+/* big list */
+span.bold {
+    font-weight: bold;
+    margin-right: 5px;
+    border-bottom: 2px solid rgb(89,89,89);
+}
+
+ul.big {
+    font-size: 20px;
+    margin-top: 25px;
+    list-style-type: none;
+    padding-left: 60px;
+}
+ul.big li:before {
+    content: "\2606";
+    margin-left: -25px;
+}
+/*cta */
+button.cta {
+    height: 50px;
+    line-height: 49px;
+    background: red;
+    color: white;
+    border: 0;
+    padding: 0px 25px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
