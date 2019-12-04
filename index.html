@@ -5,6 +5,39 @@
 layout: default
 title: Professor B Homepage
 ---
+<style>
+  .syr {
+   display: flex;
+    justify-content: space-between;
+  }
+  .syr .youtube-holder {
+   flex: 0 0 25%;
+    max-width: calc(25% - 23px);
+    text-align: center;
+  }
+  .syr .youtube-holder iframe {
+   width: 100%;
+   height: auto;
+  }
+  .syr .image-holder .the-image {
+    width:  100%;
+  }
+  @media only screen and (max-width: 1000px){
+    .ac_cs .syr {
+      flex-wrap: wrap;
+    }
+    .ac_cs .syr .youtube-holder {
+      flex: 0 0 50%;
+      max-width: calc(50% - 23px);
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .ac_cs .syr .youtube-holder {
+      flex: 0 0 50%;
+      max-width: calc(50% - 13px);
+    }
+  }
+</style>
 <div class="row">
    <div class="col-sm-12">
       <div class="well well-lg">
@@ -79,6 +112,40 @@ title: Professor B Homepage
       <div class="well well-lg">
          <div class="row">
             <div class="col-sm-offset-1 col-sm-10">
+               
+               <section>
+                 <h1>See for yourself</h1>
+                 <p>Sample lessons demonstrating Professor B Math skills teaching methology.</p>
+                 <div class="syr">
+                     <div class="youtube-holder">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/uxjNPZCtB6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <p><a href="https://youtu.be/uxjNPZCtB6g" target="_blank" alt="Watch Long Division">Professor B Long Division</a></p>
+                     </div>
+                     <div class="youtube-holder">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/AvmBYsZYeo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <p><a href="https://youtu.be/AvmBYsZYeo4" target="_blank" alt="Watch Professor B Higher Addition Facts">Higher Addition Facts</a></p>
+                     </div>
+                     <div class="youtube-holder">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/d37o8WlRozA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <p><a href="https://youtu.be/d37o8WlRozA" target="_blank" alt="Watch Professor BHigher Subtraction">Professor B Higher Subtraction </a></p>
+                     </div>
+                     <div class="youtube-holder">
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/t0u05BsEnTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <p><a href="https://youtu.be/t0u05BsEnTk" target="_blank" alt="Watch The Why Behind Professor B">The Why Behind Professor B</a></p>
+                     </div>
+                 </div>
+               </section>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-sm-12">
+      <div class="well well-lg">
+         <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
                <p class="lead">
                   This math is different.
                </p>
@@ -103,8 +170,9 @@ title: Professor B Homepage
       <div class="well well-lg">
          <div class="row">
             <div class="col-sm-offset-1 col-sm-10" style="text-align: center;">
-               <a href="https://trinityharboreducation.com/collections/professor-b-mathematics" title="Shop Professor B Math Now"><button class="cta">SHOP NOW</button></a>
-               
+               <a href="https://trinityharboreducation.com/collections/professor-b-mathematics" title="Shop Professor B Math Now"><button class="cta">SHOP THE CATALOG</button></a>
+               <small style="display:block; margin-top: 10px;">On our new store at TrinityHarborEducation.com :)</small>
+               <a style="display: none;" href="/about" title="How Professor B Math Works"><button style="float:right;" class="cta cta-alt">How it Works >></button></a>
             </div>
          </div>
       </div>
