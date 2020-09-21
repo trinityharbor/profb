@@ -4,6 +4,12 @@
 .lbluebg {
     background: #b0d8e6;
 }
+.bg-lt-blue {
+    background: #afd8e6;
+}
+.bg-red {
+    background-color: #fe0000;
+}
 .text-center {
     text-align: center;
 }
@@ -12,6 +18,9 @@
 /* main */
 body {
   padding: 0px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.4;
+  color: #353535;
 }
 body * {
     box-sizing: border-box;
@@ -24,6 +33,7 @@ body * {
     right: 0;
     width: 100%;
     padding: 0;
+    z-index: 10;
 }
 header.sticky-header:before {
     content: "";
@@ -176,20 +186,19 @@ ul.big li:before {
 }
 /* cta */
 button.cta {
-    line-height: 1.2;
-    background: red;
-    color: white;
     border: 0;
-    padding: 0px 25px;
     border-radius: 4px;
-    font-size: 20px;
-    font-weight: bold;
 }
 button.cta.cta-alt {
     background: white;
     border: 2px solid #292929;
-    color: #292929;
     opacity: .4;
+}
+.btn-big {
+    padding: 20px 30px;
+}
+.btn-small {
+    padding: 5px 10px;
 }
 /* individual section styles */
 .hero {
@@ -202,16 +211,22 @@ button.cta.cta-alt {
     background-size: cover;
     background-image: url('//cdn.shopify.com/s/files/1/1433/3376/files/Costa_rica_student_session_1080x.jpg?v=1556240832');
 }
-
-.grid-four {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
+.hero.white-overlay {
+    position: relative;
 }
-@media only screen and (max-width: 700px){
-    .grid-four {
-        grid-template-columns: 1fr;
-    }
+
+.hero.white-overlay:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.7);
+}
+
+section.site-width.hero.text-center.white-overlay > * {
+    z-index: 9;
 }
 
 .feat-vid {
@@ -254,6 +269,14 @@ button.cta.cta-alt {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.iframe-holder {
+    width: 100%;
+    position: relative;
+}
+.iframe-holder > iframe {
+    width: 100%;
+    max-width: 100%;
 }
 
 .perks-row {
