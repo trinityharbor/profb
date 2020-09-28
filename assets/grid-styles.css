@@ -9,6 +9,9 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.mar-b-30 {
+    margin-bottom: 30px;
+}
 
 .grid-four {
     display: grid;

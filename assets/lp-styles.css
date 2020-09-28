@@ -13,6 +13,9 @@
 .text-center {
     text-align: center;
 }
+.bg-grey {
+    background-color: #b3b3b3;
+}
 
 
 /* main */
@@ -34,6 +37,7 @@ body * {
     width: 100%;
     padding: 0;
     z-index: 10;
+    background-color: white;
 }
 header.sticky-header:before {
     content: "";
@@ -57,7 +61,11 @@ header.sticky-header:before {
 
 .site-width {
     max-width: 950px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 a.logo-link {
     z-index: 12;
@@ -299,4 +307,30 @@ section.site-width.aha {
 }
 .system {
     background: #afd8e5;
+}
+.img-fill {
+    width: 100%;
+    height: auto;
+}
+.img-fill {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-image {
+    border-radius: 50%;
+    border: 10px solid #afd8e6;
+    max-height: 200px;
+    width: auto;
+}
+.testimonial-row {
+    display: flex;
+}
+.video-launcher {
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
